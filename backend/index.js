@@ -14,13 +14,11 @@ app.use(cors());
 mongoose.connect("mongodb+srv://roopasree2509:Roopa@cluster0.l3h065d.mongodb.net/e-commerce")
 
 // API Creation
-
 app.get("/",(req,res)=>{
     res.send("Express App is Running")
 })
 
 // Image Storage Engine
-
 const storage = multer.diskStorage({
     destination: './upload/images',
     filename:(req,file,cb)=>{
@@ -31,7 +29,6 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage})
 
 // Creating Upload Endpoint for Images
-
 app.use('/images',express.static('upload/images'))
 
 app.post("/upload",upload.single('product'), (req,res)=>{
@@ -42,7 +39,6 @@ app.post("/upload",upload.single('product'), (req,res)=>{
 })
 
 // Schema for Creating Products
-
 const Product = mongoose.model("Product",{
     id:{
         type: Number,
