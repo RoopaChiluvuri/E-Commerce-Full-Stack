@@ -20,10 +20,10 @@ Node.js: JavaScript runtime environment for backend development.<br/>
 $ git clone https://github.com/RoopaChiluvuri/E-Commerce-Full-Stack.git
 
 <h4>Install Dependencies</h4>
-Backend - $cd backend
+Backend - $cd backend<br/>
 $ npm install
 
-Frontend - $ cd frontend
+Frontend - $ cd frontend <br/>
 $ npm install
 
 <h4>Run the Application</h4>
@@ -31,7 +31,7 @@ Frontend - $ npm start<br/>
 Backend - $ node index.js<br/>
 Admin Panel - $ npm run dev<br/>
 
-The frontend will run on http://localhost:3000.
+The frontend will run on http://localhost:3000.<br/>
 The backend will run on http://localhost:5000.
 
 
